@@ -1,15 +1,17 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Label?>
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
 <?language java?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controller">
-    <Label fx:id="label1" text="Button(off)"/>
-    <Button fx:id="button1" text="EASY" onAction="#test"/>
-
-
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="CLICK FAST TO WIN" />
+      <Button mnemonicParsing="false" text="Button">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Button>
+   </children>
 </VBox>
