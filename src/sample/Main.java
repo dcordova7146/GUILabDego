@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -35,12 +36,13 @@ public class Main extends Application {
         stageTest.setTitle("FAST CLICKER");
         stageTest.initStyle(StageStyle.UTILITY);
         stageTest.show();
-        VBox vbox = loader.<VBox>load();
-        Scene testScene = new Scene(vbox);
+        Pane pane = loader.load();
+        Scene testScene = new Scene(pane);
         stageTest.setScene(testScene);
         testScene.setCursor(Cursor.CROSSHAIR);
 
         Button clicker = new Button();
+
         Text curScore = new Text("Score: 0");
         clicker.setOnAction(new EventHandler<ActionEvent>() {
             @Override
