@@ -41,26 +41,6 @@ public class Main extends Application {
         stageTest.setScene(testScene);
         testScene.setCursor(Cursor.CROSSHAIR);
 
-        Button clicker = new Button();
-
-        Text curScore = new Text("Score: 0");
-        clicker.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                count++;
-                curScore.setText("Score: " + count);
-            }
-        });
-       AnimationTimer time = new AnimationTimer() {
-
-           @Override
-           public void handle(long now) {
-
-           }
-       };time.start();
-
-
-
     }
 
 

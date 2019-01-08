@@ -6,8 +6,8 @@
 
 <Pane fx:id="clickB" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
-        <Button fx:id="clicker" layoutX="252.0" layoutY="188.0" mnemonicParsing="false" text="CLICKER" />
-        <Label fx:id="time" layoutX="252.0" layoutY="145.0" prefHeight="31.0" prefWidth="96.0" text="TIME: 10 seconds" />
+        <Button fx:id="clicker" layoutX="252.0" layoutY="188.0" mnemonicParsing="false" text="CLICKER" onAction="#handleButton" />
+        <Label fx:id="timeLabel" layoutX="252.0" layoutY="145.0" prefHeight="31.0" prefWidth="96.0" text="TIME: 10 seconds" />
         <Label fx:id="count" layoutX="252.0" layoutY="120.0" prefHeight="25.0" prefWidth="78.0" text="COUNT:  0" />
     </children>
 </Pane>
